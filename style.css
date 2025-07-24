@@ -1,3 +1,18 @@
 h1{
     background-color: chocolate;
 }
+
+a{
+    color: green;
+    text-decoration: none;
+}
+
+a:visited{
+    color: red;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: yellow;
+    font-size: larger;
+}
