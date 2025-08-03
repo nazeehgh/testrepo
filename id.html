@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #myDiv2{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="myDiv1">
+        this is my div
+    </div>
+
+    <div id="myDiv2">
+        this is my div
+    </div>
+
+    <button onclick="myfunction1();">
+        Click Here
+    </button>
+
+<script>
+    function myfunction1(){
+        document.getElementById("myDiv1").innerHTML = "test";
+    }
+</script>
+
+</body>
+</html>

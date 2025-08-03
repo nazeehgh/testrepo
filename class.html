@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class</title>
+    <style>
+        .myclass01{
+            background-color: green;
+        }
+        .myclass02{
+            color: red;
+            background-color: yellow;
+        }
+        #d2{
+            font-size: 30px;
+        }
+    </style>
+
+    
+</head>
+<body>
+
+    <h1 class="myclass01">This is my Header</h1>
+
+    <div class="myclass01 myclass02">
+        This is my div 1
+    </div>
+    
+
+    <p id="p1" onclick="useid();"  class="myclass01">
+        This is my p 1
+    </p>
+
+    <div id="d2" class="myclass01">
+        This is my div 2
+    </div>
+
+    <button onclick="displayResultbyElementId();">Click</button>
+
+    <script>
+        document.getElementsByClassName("myclass01")[0].innerHTML = "Changed by JS";
+
+        function useid(){
+            document.getElementById("p1").innerHTML = "this is changed using elemnt id";
+        }
+
+        function displayResultbyElementId() {
+  document.getElementById("p1").innerHTML = "This is content is changed using id=p1";
+}
+    </script>
+</body>
+</html>
