@@ -8,9 +8,24 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
-        div > p {
-            color: red;
+
+        /* This is a single-line comment */
+
+        *{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
+
+div > span {
+    color: yellow;
+}
+
+        div  p {
+            color: blue;
+        }
+
+        div ~ span{
+            background-color: black;
+                }
 
         div + p {
   background-color: green;
@@ -20,14 +35,45 @@
   background-color: yellow;
 } */
 
+.myh2class{
+    color: blue;
+}
+
+.c2{
+    background-color: brown;
+}
+
+#myh2id{
+    border: 2px solid red;
+}
+
+
+div, span{
+    border: 1px dotted red;
+}
+
+p{
+    border:green  solid 5px;
+}
 
     </style>
 </head>
 <body>
 
-    <div>
+    <h1>This is my h1</h1>
+    <h2 class="myh2class c2" id="myh2id">This is my h2</h2>
+
+
+    <div style="border:1px dashed red">
+        this is my div
         <p>This is p inside div.</p>
+        <span>this is span inside div</span>
     </div>
+
+    <span>"This is span outside div 1"</span>
+    <span>This is span outside div 2</span>
+    <span>This is span outside div 3</span>
+
 
     <p>
         this is new p
@@ -35,6 +81,7 @@
     <p>
         this is p outside
     </p>
-    
+
+   
 </body>
 </html>
