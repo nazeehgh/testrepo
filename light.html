@@ -8,7 +8,7 @@
 </head>
 <body>
     
-<img id="bulb" src="images/pic_bulboff.gif" width="300px" alt="" onclick="bulbtogfun();">
+<img id="bulb" src="images/pic_bulboff.gif" width="200px" alt="Bulb image" onclick="bulbtogfun();">
 
 
 <script>
@@ -20,7 +20,7 @@
     function bulbtogfun(){
 
         isrc = document.getElementById("bulb").src.split('/').pop();
-        //document.write(isrc);
+        // document.write(document.getElementById("bulb").src.split('/').pop());
         if(isrc == 'pic_bulboff.gif'){
         document.getElementById("bulb").src = "images/pic_bulbon.gif";
         }

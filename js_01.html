@@ -20,7 +20,7 @@ div 2
 
 
     <input type="text" placeholder="change action" onchange="fun04();">
-    <input type="text" placeholder="keydown action" onkeydown="fun04();">
+    <input type="text" placeholder="keydown action" onkeydown="fun04();" onkeyup="fun05();">
 
     <script>
     // function mydatetimefun(){
@@ -38,11 +38,20 @@ div 2
     function fun04(){
         i++;
         document.getElementById("mydiv1").innerText += i + ' | ';
+        document.getElementById("mydiv1").style.background = '#FF5500';
         // document.getElementById("mydiv1").style.fontSize = "35px";
         // document.getElementById("mydiv1").style.color = '#FF0000';
         // document.getElementById("mydiv1").style.background = '#005533';
         // document.getElementById("bt1").style.display  = 'none';
 
+    }
+    function fun05(){
+        // i++;
+        document.getElementById("mydiv1").style.background = '#AAAAAA';
+        // document.getElementById("mydiv1").style.fontSize = "35px";
+        // document.getElementById("mydiv1").style.color = '#FF0000';
+        // document.getElementById("mydiv1").style.background = '#005533';
+        // document.getElementById("bt1").style.display  = 'none';
 
     }
     </script>
