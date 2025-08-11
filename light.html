@@ -8,13 +8,25 @@
 </head>
 <body>
     
-<img id="bulb" src="images/pic_bulboff.gif" width="300px" alt="" onclick="bulbfun();">
+<img id="bulb" src="images/pic_bulboff.gif" width="300px" alt="" onclick="bulbtogfun();">
 
 
 <script>
     function bulbfun(){
 
         document.getElementById("bulb").src = "images/pic_bulbon.gif";
+    }
+
+    function bulbtogfun(){
+
+        isrc = document.getElementById("bulb").src.split('/').pop();
+        //document.write(isrc);
+        if(isrc == 'pic_bulboff.gif'){
+        document.getElementById("bulb").src = "images/pic_bulbon.gif";
+        }
+        else{
+            document.getElementById("bulb").src = "images/pic_bulboff.gif";
+        }
     }
 </script>
 </body>
