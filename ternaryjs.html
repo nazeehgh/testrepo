@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ternary Operator</title>
+</head>
+<body>
+    
+<input id="x" >
+<button onclick="checkfn();">Check One...</button>
+<button onclick="checkfn2();">Check Two...</button>
+
+<p id="outp">
+    
+</p>
+
+
+<script>
+    function checkfn(){
+        //get the value of the textbox
+        let x = document.getElementById("x").value;
+        // document.write(x);
+        // (condition) ? value1:value2
+        // document.write( (x > 5) ? "Text 1":"Text 2" );
+        // document.write( (false) ? "Text 1":"Text 2" );
+        document.getElementById("outp").innerText = ( (x >= 18) ? "You CAN ":"You CAN'T ")  +  ( "Register here." )   ;
+        checkfn2();
+
+    }
+
+    function checkfn2(){
+        //get the value of the textbox
+        let x = document.getElementById("x").value;
+        let flag = (x >= 18) ? true:false;
+
+        if(flag){
+            document.getElementById("outp").style.color = '#00FF00';
+        }
+        else{
+            document.getElementById("outp").style.color = '#FF0000';
+
+        }
+
+    }
+</script>
+
+</body>
+</html>
