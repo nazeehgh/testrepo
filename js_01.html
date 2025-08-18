@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <p id="demo" onclick="mydatetimefun();">
+     <p id="demo" onclick="mydatetimefun();">
         This is a demo paragraph.
     </p>
     <div id="mydiv1" ondblclick ="myfun02();">
@@ -16,8 +16,11 @@ div 2
     </div>
 
     <button id="bt1" onclick="fun3()">Click Me</button>
+    <button onclick="myfun03()">Click for Fun 3</button>
 
-    <input type="text" onchange="fun3();">
+
+    <input type="text" placeholder="change action" onchange="fun04();">
+    <input type="text" placeholder="keydown action" onkeydown="fun04();" onkeyup="fun05();">
 
     <script>
     // function mydatetimefun(){
@@ -25,20 +28,32 @@ div 2
 
     // }
 
-    // function myfun02(){
-    //     // document.getElementById("mydiv1").style.Color = "red";
-    //     document.getElementById("mydiv1").innerText = "red";
-    // }
+    function myfun03(){
+        document.getElementById("mydiv1").style.color = "red";
+        document.getElementById("mydiv1").innerText = 'Color changed to red using function 03';
+    }
 
-    // function fun3(){
-    //     // document.getElementById("mydiv1").innerText = "ABC";
-    //     document.getElementById("mydiv1").style.fontSize = "35px";
-    //     document.getElementById("mydiv1").style.color = '#FF0000';
-    //     document.getElementById("mydiv1").style.background = '#005533';
-    //     document.getElementById("bt1").style.display  = 'none';
+    i = 0;
 
+    function fun04(){
+        i++;
+        document.getElementById("mydiv1").innerText += i + ' | ';
+        document.getElementById("mydiv1").style.background = '#FF5500';
+        // document.getElementById("mydiv1").style.fontSize = "35px";
+        // document.getElementById("mydiv1").style.color = '#FF0000';
+        // document.getElementById("mydiv1").style.background = '#005533';
+        // document.getElementById("bt1").style.display  = 'none';
 
-    // }
+    }
+    function fun05(){
+        // i++;
+        document.getElementById("mydiv1").style.background = '#AAAAAA';
+        // document.getElementById("mydiv1").style.fontSize = "35px";
+        // document.getElementById("mydiv1").style.color = '#FF0000';
+        // document.getElementById("mydiv1").style.background = '#005533';
+        // document.getElementById("bt1").style.display  = 'none';
+
+    }
     </script>
 
     <script src="script.js">
