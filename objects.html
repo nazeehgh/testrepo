@@ -9,6 +9,8 @@
 <body>
     <p id="demo"></p>
 
+    <p id="demo2"></p>
+
 <script>
 // Create an Object:
 const car1 = {type:"Fiat", model:"500", color:"white"};
@@ -43,9 +45,18 @@ p2.school = "UJ";
 
 const p3 = new Person("Omar", "Adel", "30", "Brown");
 
+const p4 = new Person("Furat");
+
 // Display Data from the Object:
 document.getElementById("demo").innerHTML =
-"the name is: " + p1.getInfo() + " the id is: " + p2["school"] + "  " + p3.firstName;
+"the name is: " + p1.getInfo() + " the id is: " + p2["school"] + "  " + p3.firstName ;
+
+p4.eyeColor = "brown";
+p4.place = "Aqaba";
+
+document.getElementById("demo2").innerHTML = p4.firstName + "  " + p4.eyeColor + "  " + p4.place;
+// document.write(typeof(p3));
+
 </script>
 </body>
 </html>
