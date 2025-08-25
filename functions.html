@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="_1" onclick="myfun();">
+        This is my active div.
+    </div>
+
+    <button onclick="myfun2();" id="_2" type="text" value="ABC">Click HERE</button>
+    
+    <script>
+        function myfun(){
+            //alert("Tis is an alert");
+            document.getElementById("_2").innerText = "This is Furat...";
+
+
+        }
+
+        function myfun2(){
+            //alert("Tis is an alert");
+            document.getElementById("_1").innerText = document.getElementById("_1").value;
+
+
+        }
+    </script>
+</body>
+</html>

@@ -10,14 +10,31 @@
     <h1>Testing JS Functions</h1>
     <button onclick="myfun1(7,8);">Click Me</button>
 
-    <input type="text"> +  <input type="text"> <button>=</button>
+    <input id="x" type="text"> +  <input id="y" type="text"> <button onclick="sum();">=</button>
+    <p id="result"></p>
     <p id="p1"></p>
 
     <button onclick="arfunction(4,5);">Arrow Function</button>
 
 <script>
 
-    
+function sum(){
+    let x = document.getElementById("x").value;
+    let y = document.getElementById("y").value;
+
+    // document.write(x);
+
+    // document.write(typeof(x));
+    // let sum = parseInt(x) + parseInt(y);
+    let sum = parseFloat(x) + parseFloat(y);
+    // document.write(sum);
+
+    document.getElementById("result").innerText = sum;
+
+}
+ 
+alert(x);
+
 let arfunction = (x,y) => alert(x*y);
 
 // alert(arfunction(4,5));

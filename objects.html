@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <p id="demo2"></p>
+
+<script>
+// Create an Object:
+const car1 = {type:"Fiat", model:"500", color:"white"};
+const car2 = {type:"Toyota", model:"Camry", color:"red"};
+
+const p1 = {
+    name: "Ali",
+    id: 123,
+    age: 25,
+    school: "UJA",
+    getInfo : function() {
+    return this.name + " " + this.school;
+    }
+};
+
+const p2 = {
+    name: "Sara",
+    id: 456,
+    age: 15
+};
+
+function Person(first, last, age, eye) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eye;
+}
+
+p2.name = "Yara";
+p2.school = "UJ";
+
+
+const p3 = new Person("Omar", "Adel", "30", "Brown");
+
+const p4 = new Person("Furat");
+
+// Display Data from the Object:
+document.getElementById("demo").innerHTML =
+"the name is: " + p1.getInfo() + " the id is: " + p2["school"] + "  " + p3.firstName ;
+
+p4.eyeColor = "brown";
+p4.place = "Aqaba";
+
+document.getElementById("demo2").innerHTML = p4.firstName + "  " + p4.eyeColor + "  " + p4.place;
+// document.write(typeof(p3));
+
+</script>
+</body>
+</html>
