@@ -1,0 +1,8 @@
+p{
+    color: red;
+    background-color:grey;
+}
+
+h1, h2, h3, p {
+    color:orange;
+}
